@@ -83,9 +83,17 @@ ul {
 figure {
   // Add vertical rhythm margins.
   @include margin(1 0);
+  img {
+    &.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 figcaption {
+  text-align: center;
   // Add your styles.
 }
 

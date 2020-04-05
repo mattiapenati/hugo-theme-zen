@@ -39,5 +39,6 @@
 
 </div>
 {{ if $.Param "mobilemenu" }}{{ partial "mobilemenu.html" . }}{{ end -}}
+{{ if or .Params.math .Site.Params.math }}{{ partial "katex.html" . }}{{ end -}}
 </body>
 </html>
